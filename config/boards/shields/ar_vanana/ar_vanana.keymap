@@ -56,7 +56,7 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B         &kp C_MUTE  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
                             &kp LGUI    &kp LALT    &mo LOWER   &kp ENTER &kp SPACE                 &kp SPACE   &kp ENTER   &mo RAISE   &kp RALT    &kp RGUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         mod_layer {
@@ -73,11 +73,11 @@
             bindings = <
                 &trans      &trans      &trans      &trans      &trans      &trans                  &trans      &trans      &trans      &trans      &trans      &trans  
                 &trans      &trans      &trans      &trans      &trans      &trans                  &trans      &trans      &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &tra nb ns      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &kp LCTL    &kp LALT    &kp LGUI    &trans      &trans                  &trans      &trans      &kp RGUI    &trans      &trans
             >;
-        };
+    };
 
         lower_layer {
             bindings = <
