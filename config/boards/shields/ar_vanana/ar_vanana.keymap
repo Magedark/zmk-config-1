@@ -54,9 +54,9 @@
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T                     &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSLH
                 &kp LCTRL   &kp A       &kp S       &kp D       &kp F     &kp G         &kp C_PP    &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B         &kp C_MUTE  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
-                            &kp LGUI    &kp LALT    &kp LCTL    &mo LOWER &kp SPC                   &kp SPC     &mo RAISE   &kp RALT    &kp DARW    &kp UARW
+                            &kp LGUI    &kp LALT    &mo LOWER   &kp ENTER &kp SPACE                 &kp SPACE   &kp ENTER   &mo RAISE     &kp DOWN    &kp UP
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         mod_layer {
@@ -67,7 +67,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &trans      &trans      &trans      &trans      &kp SPC                 &kp SPC     &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         mac_layer {
@@ -78,18 +78,18 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &kp LCTL    &kp LALT    &kp LGUI    &trans      &trans                  &trans      &trans      &kp RGUI    &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         lower_layer {
             bindings = <
-                &kp DEL     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                  &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11  
-                &kp BKSP    &kp FSLH    &kp NUM_7   &kp NUM_8   &kp NUM_9   &kp PLUS                &kp CARET   &kp LBKT    &kp RBKT    &kp AT      &kp EXCL    &trans
-                &kp EQUAL   &kp NUM_0   &kp NUM_4   &kp NUM_5   &kp NUM_6   &kp MINUS   &kp UARW    &kp PIPE    &kp LPAR    &kp RPAR    &kp HASH    &kp DQT     &trans
-                &trans      &kp STAR    &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp UNDER   &kp DARW    &kp DOLLAR  &kp LBRC    &kp RBRC    &kp AMPS    &kp PRCNT   &kp SQT
-                            &trans      &trans      &trans      &trans      &trans                  &trans      &mo ADJUST  &trans      &trans      &trans
+                &kp TILDE   &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &kp PRCNT               &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp EQUAL     &kp PG_UP  
+                &kp LCTRL    &kp N1      &kp N2      &kp N3      &kp N4      &kp KP_MINUS            &kp KP_PLUS &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0     &trans
+                &kp LSHFT    &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT    &kp LBRC    &kp UP    &kp RBRC    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS   &trans
+                &trans      &kp LALT    &trans      &trans      &trans      &kp LBKT    &kp DOWN    &kp RBKT    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS  &kp SQT
+                            &mo MOD     &trans      &trans      &kp LALT    &kp DEL                 &kp DEL     &kp RALT    &kp KP_N0   &trans      &mo MOD
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         raise_layer {
