@@ -91,6 +91,10 @@ jobs:
           name: firmware
           path: vanana-rev2-nano_v2.uf2
 
+      # Clear build directory
+      - name: delete compilation residue
+        run:  rm -rf build/zephyr/*
+
       # Custom keymap with nice_nano v2
       - name: AR Keymap (vanana_rev2 with nano2)
         run: west build -s zmk/app -p -b nice_nano_v2 -- -DSHIELD=ar -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
