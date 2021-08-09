@@ -56,7 +56,7 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B         &kp C_MUTE  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
                             &kp LGUI    &kp LALT    &mo LOWER   &kp ENTER &kp SPACE                 &kp SPACE   &kp ENTER   &mo RAISE   &kp RALT    &kp UP
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) C_AL_PREV_TASK>;
+            sensor-bindings = <&inc_dec_kp LA(TAB) RA(LSHFT(TAB))) &inc_dec_kp LA(TAB) RA(LSHFT(TAB)))>;
         };
 
         mod_layer {
@@ -67,7 +67,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &trans      &trans      &trans      &trans      &kp SPC                 &kp SPC     &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) RA(LSHFT(TAB))>;
         };
 
         mac_layer {
@@ -78,7 +78,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &kp LCTL    &kp LALT    &kp LGUI    &trans      &trans                  &trans      &trans      &kp RGUI    &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) RA(LSHFT(TAB))>;
         };
 
         lower_layer {
@@ -89,7 +89,7 @@
                 &trans      &kp LALT    &trans      &trans      &trans      &kp LBKT    &kp DOWN    &kp RBKT    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS  &kp END
                             &mo ADJUST     &trans      &trans      &kp LALT    &kp DEL                 &kp DEL     &kp RALT    &kp KP_N0   &trans      &mo ADJUST
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) RA(LSHFT(TAB))>;
         };
 
         raise_layer {
@@ -100,7 +100,7 @@
                 &kp C_MUTE           &kp C_STOP  &kp C_PLAY  &kp C_VOL_DN      &kp PG_DN   &kp MINUS     &kp C_VOL_DN  &kp KP_PLUS &kp END     &rgb_ug RGB_HUD    &kp LBKT    &kp RBKT    &trans
                                      &mo ADJUST  &trans      &trans            &trans      &trans                      &trans      &trans      &trans             &trans      &mo ADJUST
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) RA(LSHFT(TAB))>;
         };
         
         adjust_layer {
@@ -111,7 +111,7 @@
                 &trans      &trans          &trans          &trans          &trans          &trans          &kp C_VOL_DN    &tog MOD    &tog MAC    &trans      &trans      &trans      &trans  
                             &trans          &trans          &trans          &trans          &trans                          &trans      &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;  
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) RA(LSHFT(TAB))>;
         };
 
     };
