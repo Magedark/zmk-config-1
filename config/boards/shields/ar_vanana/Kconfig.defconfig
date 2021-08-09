@@ -1,9 +1,9 @@
 # Copyright (c) 2020 dELLIKEEb
 # SPDX-License-Identifier: MIT
 
-if SHIELD_AR
+if SHIELD_AR_VANANA
 
 config ZMK_KEYBOARD_NAME
-	default "AR"
+	default "AR Vanana"
 
 endif
