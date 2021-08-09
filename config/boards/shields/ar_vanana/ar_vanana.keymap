@@ -56,7 +56,7 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V     &kp B         &kp C_MUTE  &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
                             &kp LGUI    &kp LALT    &mo LOWER   &kp ENTER &kp SPACE                 &kp SPACE   &kp ENTER   &mo RAISE   &kp RALT    &kp RGUI
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LA(TAB) RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LA(TAB) RA(LS(TAB)))>;
         };
 
         mod_layer {
@@ -66,7 +66,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &trans      &trans      &trans      &trans      &kp SPC                 &kp SPC     &trans      &trans      &trans      &trans
-            >;
+            >;  
         };
 
         mac_layer {
