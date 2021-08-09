@@ -50,13 +50,13 @@
 
         default_layer {
             bindings = <
-                &kp GRAV    &kp N1      &kp N2      &kp N3      &kp N4    &kp N5                    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BKSP
+                &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4    &kp N5                    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BKSP
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R     &kp T                     &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSLH
-                &kp ESC     &kp A       &kp S       &kp D       &kp F     &kp G         &kp RARW    &kp H       &kp J       &kp K       &kp L       &kp SCLN    &kp RET
-                &kp LSFT    &kp Z       &kp X       &kp C       &kp V     &kp B         &kp LARW    &kp N       &kp M       &kp CMMA    &kp DOT     &kp FSLH    &mt RSFT SQT
-                            &kp LGUI    &kp LALT    &kp LCTL    &mo LOWER &kp SPC                   &kp SPC     &mo RAISE   &kp RALT    &kp DARW    &kp UARW
+                &kp LCTL    &kp A       &kp S       &kp D       &kp F     &kp G         &kp C_PP    &kp H       &kp J       &kp K       &kp L       &kp SCLN    &kp SQT
+                &kp LSFT    &kp Z       &kp X       &kp C       &kp V     &kp B         &kp C_MUTE  &kp N       &kp M       &kp CMMA    &kp DOT     &kp FSLH    &mt RSFT
+                            &kp LGUI    &kp LALT    &mo LOWER   &kp ENTER &kp SPC                   &kp SPC     &kp ENTER   &mo RAISE   &kp DARW    &kp UARW
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         mod_layer {
@@ -67,7 +67,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &trans      &trans      &trans      &trans      &kp SPC                 &kp SPC     &trans      &trans      &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         mac_layer {
@@ -78,29 +78,29 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
                             &kp LCTL    &kp LALT    &kp LGUI    &trans      &trans                  &trans      &trans      &kp RGUI    &trans      &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         lower_layer {
             bindings = <
-                &kp DEL     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                  &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11  
-                &kp BKSP    &kp FSLH    &kp NUM_7   &kp NUM_8   &kp NUM_9   &kp PLUS                &kp CARET   &kp LBKT    &kp RBKT    &kp AT      &kp EXCL    &trans
-                &kp EQUAL   &kp NUM_0   &kp NUM_4   &kp NUM_5   &kp NUM_6   &kp MINUS   &kp UARW    &kp PIPE    &kp LPAR    &kp RPAR    &kp HASH    &kp DQT     &trans
-                &trans      &kp STAR    &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp UNDER   &kp DARW    &kp DOLLAR  &kp LBRC    &kp RBRC    &kp AMPS    &kp PRCNT   &kp SQT
-                            &trans      &trans      &trans      &trans      &trans                  &trans      &mo ADJUST  &trans      &trans      &trans
+                &kp TILDE   &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &kp PRCNT               &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp EQUAL     &kp PG_UP  
+                &kp LCTL    &kp N1      &kp N2      &kp N3      &kp N4      &kp KP_MINUS            &kp KP_PLUS &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0     &trans
+                &kp LSFT    &kp LARW    &kp DARW    &kp UARW    &kp RARW    &kp LBRC    &kp UARW    &kp RBRC    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS   &trans
+                &trans      &kp LALT    &trans      &trans      &trans      &kp LBKT    &kp DARW    &kp RBKT    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS  &kp SQT
+                            &mo ADJUST  &trans      &trans      &kp LALT    &kp DEL                 &kp DEL     &kp RALT    &kp KP_N0   &trans      &mo ADJUST
             >;
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 
         raise_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans      &trans                      &trans      &trans      &trans      &trans      &trans      &kp F12  
-                &trans      &trans      &trans      &trans      &trans      &trans                      &trans      &kp HOME    &kp UARW    &kp DEL     &kp END     &kp DOLLAR
-                &trans      &trans      &trans      &trans      &trans      &trans      &kp C_VOL_UP    &kp BSPC    &kp LARW    &kp DARW    &kp RARW    &kp APOS    &trans 
-                &trans      &trans      &trans      &trans      &trans      &trans      &kp C_VOL_DN    &trans      &trans      &trans      &trans      &trans      &kp DQT 
-                            &trans      &trans      &trans      &mo ADJUST  &trans                      &trans      &trans      &trans      &trans      &trans
+                &kp F12              &kp F1      &kp F2      &kp F3            &kp F4      &kp F5                      &kp F6      &kp F7      &kp F8             &kp F9      &kp F10     &kp F11  
+                &rgb_ug RGB_TOG      &kp EXCL    &kp AT      &kp POUND         &kp DLLR    &kp PRCNT                   &kp CARET   &kp AMPS    &kp STAR           &kp LPAR    &kp RPAR    &trans
+                &kp RGB_EFF          &kp C_PREV  &kp C_NEXT  &kp C_VOL_UP      &kp PG_UP   &kp UNDER     &kp C_VOL_UP  &kp EQUAL   &kp HOME    &rgb_ug RGB_HUI    &kp LBRC    &kp RBRC    &trans 
+                &kp C_MUTE           &kp C_STOP  &kp C_PLAY  &kp C_VOL_DN      &kp PG_DN   &kp MINUS     &kp C_VOL_DN  &kp KP_PLUS &kp END     &rgb_ug RGB_HUD    &kp LBKT    &kp RBKT    &trans
+                                     &mo ADJUST  &trans      &trans            &trans      &trans                      &trans      &trans      &trans             &trans      &mo ADJUST
             >;
-            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
         
         adjust_layer {
@@ -111,6 +111,8 @@
                 &trans      &trans          &trans          &trans          &trans          &trans          &kp C_VOL_DN    &tog MOD    &tog MAC    &trans      &trans      &trans      &trans  
                             &trans          &trans          &trans          &trans          &trans                          &trans      &trans      &trans      &trans      &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+            
         };
 
     };
