@@ -85,7 +85,7 @@
                 &kp LCTL    &kp N1      &kp N2      &kp N3      &kp N4      &kp KP_MINUS            &kp KP_PLUS &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0     &trans
                 &kp LSFT    &kp LARW    &kp DARW    &kp UARW    &kp RARW    &kp LBRC    &kp UARW    &kp RBRC    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS   &trans
                 &trans      &kp LALT    &trans      &trans      &trans      &kp LBKT    &kp DARW    &kp RBKT    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS  &kp SQT
-                            &mo ADJUST  &trans      &trans      &kp LALT    &kp DEL                 &kp DEL     &kp RALT    &kp KP_N0   &trans      &mo ADJUST
+                            &mo MOD     &trans      &trans      &kp LALT    &kp DEL                 &kp DEL     &kp RALT    &kp KP_N0   &trans      &mo MOD
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
