@@ -93,7 +93,7 @@ jobs:
 
       # Custom keymap with nice_nano v2
       - name: AR Keymap (vanana_rev2 with nano2)
-        run: west build -s zmk/app -p -b nice_nano_v2 -- -DSHIELD=ar_keymap -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -p -b nice_nano_v2 -- -DSHIELD=ar -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: ar_keymap DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
