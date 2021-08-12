@@ -27,7 +27,7 @@
 			, <&gpio0 2 GPIO_ACTIVE_HIGH>
 			, <&gpio0 31 GPIO_ACTIVE_HIGH>
 			, <&gpio0 8 GPIO_ACTIVE_HIGH>
-			, <&gpio0 6 GPIO_ACTIVE_HIGH>
+			, <&gpio0 6 GPIO_ACTIVE_HIGH>0
 			, <&gpio0 20 GPIO_ACTIVE_HIGH>
 			, <&gpio0 22 GPIO_ACTIVE_HIGH>
 			, <&gpio1 0 GPIO_ACTIVE_HIGH>
@@ -62,10 +62,10 @@
 	rt02: encoder_02 {
         compatible = "alps,ec11";
         label = "ENCODER 02";
-        a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-		status = "okay";
+		status = "okay";  
     };
 
 	sensors {
