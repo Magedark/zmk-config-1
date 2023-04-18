@@ -12,7 +12,6 @@
 // custom keycode defs for easier access
 #define DEFAULT 0
 #define MOD     1
-#define MAC     2
 #define LOWER   3
 #define RAISE   4
 #define ADJUST  5
@@ -69,16 +68,6 @@
             >;  
         };
 
-        mac_layer {
-            bindings = <
-                &trans      &trans      &trans      &trans      &trans      &trans                  &trans      &trans      &trans      &trans      &trans      &trans  
-                &trans      &trans      &trans      &trans      &trans      &trans                  &trans      &trans      &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
-                            &kp LCTL    &kp LALT    &kp LGUI    &trans      &trans                  &trans      &trans      &kp RGUI    &trans      &trans
-            >;
-    };
-
         lower_layer {
             bindings = <
                 &kp GRAVE   &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &kp PRCNT               &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp EQUAL     &kp PG_UP  
@@ -104,7 +93,7 @@
                 &bootloader &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                    &trans      &trans      &trans      &trans      &trans      &bt BT_CLR        
                 &trans      &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_BRI &rgb_ug RGB_BRD                 &trans      &trans      &trans      &trans      &trans      &trans
                 &kp CAPS    &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &trans          &kp C_VOL_UP    &trans      &trans      &trans      &trans      &trans      &trans  
-                &trans      &trans          &trans          &trans          &trans          &trans          &kp C_VOL_DN    &tog MOD    &tog MAC    &trans      &trans      &trans      &trans  
+                &trans      &trans          &trans          &trans          &trans          &trans          &kp C_VOL_DN    &tog MOD    &trans    &trans      &trans      &trans      &trans  
                             &trans          &trans          &trans          &trans          &trans                          &trans      &trans      &trans      &trans      &trans
             >;
         };
